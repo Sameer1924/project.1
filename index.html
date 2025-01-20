@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            background-size: cover;
+        }
+
+        .myform {
+            width: 330px;
+            height: 525px;
+            margin: 50px auto;
+            padding: 30px 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 15px;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .h3 {
+            margin: auto;
+            text-align: center;
+            font-style: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 8px 4px;
+            border-radius: 6px;
+            border: 2px solid linear-gradient(135deg, #71b7e6, #9b59b6);
+            height: 40px;
+            
+
+
+        }
+
+        .input1 {
+            align-items: center;
+            margin: auto;
+            width: 265px;
+            
+            color: #71b7e6;
+        }
+
+        .s1 {
+            width: 100%;
+            width: 100%;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            border: none;
+            padding: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .s2{
+            font-size: 16px;
+        }
+        #s4{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <div class="myform">
+            <h3 id="s4">REGISTERATION FORM</h3><br>
+            <div class="input-box">
+                <label for="Name">Name</label><br>
+                <input type="text" id="Name" placeholder="Enter your Name">
+            </div><br>
+            <div class="input-box">
+                <label for="user">Username</label><br>
+                <input type="text" id="user" placeholder=" Enter your Username">
+            </div><br>
+            <div class="input-box">
+                <label for="mail">Email</label><br>
+                <input type="text" id="mail" placeholder=" Enter your Email">
+            </div><br>
+            <div class="input-box">
+                <label for="pass">Password</label><br>
+                <input type="text" id="pass" placeholder="Enter your Password">
+            </div><br>
+            <div class="s2">
+                Gender: <input type="radio" name="gender" id=""> Male <input type="radio" name="gender" id="">Female
+            </div>
+            <br>
+            <div>
+                <input type="checkbox">&nbsp;I accept this terms and condition
+            </div><br>
+            <br>
+            <div class="input1">
+                <input class="s1" type="Submit" value="Submit">
+            </div><br>
+
+        </div>
+    </form>
+</body>
+
+</html>
